@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/acme</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/alegreya_sans_bold</item>
+        <item>@font/amaranth</item>
+        <item>@font/archivo_black</item>
+        <item>@font/archivo_narrow</item>
+        <item>@font/asap_medium</item>
+        <item>@font/cabin_semibold</item>
+        <item>@font/cairo_bold</item>
+        <item>@font/cairo_semibold</item>
+        <item>@font/chivo</item>
+        <item>@font/cormorant_upright_bold</item>
+        <item>@font/crimson_text_semibold</item>
+        <item>@font/galada</item>
+        <item>@font/gurajada</item>
+        <item>@font/hind_semibold</item>
+        <item>@font/katibeh</item>
+        <item>@font/kreon</item>
+        <item>@font/lato</item>
+        <item>@font/lato_black</item>
+        <item>@font/lato_bold</item>
+        <item>@font/lora_bold</item>
+        <item>@font/mukta_vaani_bold</item>
+        <item>@font/muli_bold</item>
+        <item>@font/muli_extrabold</item>
+        <item>@font/neuton</item>
+        <item>@font/oleo_script</item>
+        <item>@font/open_sans</item>
+        <item>@font/open_sans_bold</item>
+        <item>@font/open_sans_condensed_bold</item>
+        <item>@font/open_sans_semibold</item>
+        <item>@font/playball</item>
+        <item>@font/pt_sans_bold</item>
+        <item>@font/pt_serif_bold</item>
+        <item>@font/roboto_mono</item>
+        <item>@font/sail</item>
+        <item>@font/sarala_bold</item>
+        <item>@font/yantramanav_bold</item>
+        <item>@font/yantramanav_medium</item>
+        <item>@font/yrsa_medium</item>
+    </array>
+</resources>

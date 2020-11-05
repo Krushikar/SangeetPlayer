@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.mikhaellopez.circleview.CircleView
+        android:id="@+id/circleView"
+        android:layout_width="@dimen/_500sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+
+        android:layout_marginRight="15dp"
+        app:cv_color="#16E6E5E5"
+        app:cv_shadow="true"
+        app:cv_shadow_color="#FAF8F8"
+        app:cv_shadow_gravity="bottom"
+        app:cv_shadow_radius="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circleview.CircleView
+        android:id="@+id/circleView2"
+        android:layout_width="@dimen/_400sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="75dp"
+
+        android:layout_marginRight="75dp"
+        app:cv_color="#3BECEBEB"
+        app:cv_shadow="true"
+        app:cv_shadow_color="#BAF1F1F1"
+        app:cv_shadow_gravity="bottom"
+        app:cv_shadow_radius="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circleview.CircleView
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_250sdp"
+        app:cv_color="@color/red1"
+        app:cv_shadow="true"
+        app:cv_shadow_color="@color/black"
+        app:cv_shadow_radius="85"
+        app:cv_shadow_gravity="bottom"
+
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+
+        android:src="@drawable/album_art1"
+        android:scaleType="centerCrop"
+        app:civ_border="false"
+
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_dur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="3:45"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/current_dur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="1:45"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
+        android:max="100"
+        android:padding="0dp"
+        android:progress="45"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@color/red1"
+        app:layout_constraintBottom_toTopOf="@+id/play_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:tint="#656464"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toEndOf="@+id/play_pause"
+        app:layout_constraintTop_toTopOf="@+id/play_pause"
+        app:srcCompat="@drawable/ic_skip_next_black_24dp" />
+
+    <ImageView
+        android:id="@+id/prev"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:tint="#656464"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toStartOf="@+id/play_pause"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/play_pause"
+        app:srcCompat="@drawable/ic_skip_previous" />
+
+    <ImageView
+        android:id="@+id/play_pause"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/round_back"
+        android:elevation="12dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pause_black_24dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:cardElevation="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/white"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/current_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Tuscan Leather"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                app:layout_constraintStart_toEndOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/current_song_name"
+                app:layout_constraintStart_toStartOf="@+id/current_song_name" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48000002">
+
+                <ImageView
+                    android:id="@+id/view_trackt_song_art"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/album_art1" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/round_back"
+        android:elevation="12dp"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_white_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        android:background="@drawable/round_back"
+        android:elevation="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_navigate_before_white_24dp" />
+
+    <ImageView
+        android:id="@+id/shuffle"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+
+        android:visibility="invisible"
+        android:padding="7dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_back"
+        android:elevation="12dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/equilizer"
+        app:srcCompat="@drawable/ic_shuffle" />
+
+    <ImageView
+        android:id="@+id/equilizer"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+
+        android:visibility="invisible"
+        android:padding="7dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_back"
+        android:elevation="12dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/repeat"
+        app:srcCompat="@drawable/ic_equalizer" />
+
+    <ImageView
+        android:id="@+id/repeat"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+
+        android:visibility="invisible"
+        android:padding="7dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_back"
+        android:elevation="12dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_repeat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

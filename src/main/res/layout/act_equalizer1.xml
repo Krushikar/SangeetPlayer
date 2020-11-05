@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#cccccc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ToggleButton
+
+        android:id="@+id/toggle_bass"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:background="@drawable/switch_thumb1"
+        android:text="ON  "
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintEnd_toEndOf="@+id/croller_bass"
+        app:layout_constraintTop_toBottomOf="@+id/croller_bass" />
+
+
+    <ToggleButton
+
+        android:id="@+id/toggle_loud"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:background="@drawable/switch_thumb1"
+        android:text="ON  "
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintEnd_toEndOf="@+id/croller_loud"
+        app:layout_constraintTop_toBottomOf="@+id/croller_loud" />
+
+
+    <ToggleButton
+
+        android:id="@+id/toggle_vr"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:background="@drawable/switch_thumb1"
+        android:text="ON  "
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintEnd_toEndOf="@+id/croller_vr"
+        app:layout_constraintTop_toBottomOf="@+id/croller_vr" />
+
+    <LinearLayout
+        android:id="@+id/linear_eq"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/croller_loud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_preset">
+
+        <!--                <SeekBar-->
+        <!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="20dp"-->
+        <!--                    android:progressDrawable="@drawable/seekbar_style"-->
+        <!--                    android:thumb="@color/red1"-->
+        <!--                    android:progress="45"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:splitTrack="false"-->
+        <!--                    />-->
+
+        <!--                <SeekBar-->
+        <!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="20dp"-->
+        <!--                    android:progressDrawable="@drawable/seekbar_style"-->
+        <!--                    android:thumb="@color/red1"-->
+        <!--                    android:progress="45"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:splitTrack="false"-->
+        <!--                    />-->
+
+        <!--                <SeekBar-->
+        <!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="20dp"-->
+        <!--                    android:progressDrawable="@drawable/seekbar_style"-->
+        <!--                    android:thumb="@color/red1"-->
+        <!--                    android:progress="45"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:splitTrack="false"-->
+        <!--                    />-->
+
+        <!--                <SeekBar-->
+        <!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="20dp"-->
+        <!--                    android:progressDrawable="@drawable/seekbar_style"-->
+        <!--                    android:thumb="@color/red1"-->
+        <!--                    android:progress="45"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:splitTrack="false"-->
+        <!--                    />-->
+
+        <!--                <SeekBar-->
+        <!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="20dp"-->
+        <!--                    android:progressDrawable="@drawable/seekbar_style"-->
+        <!--                    android:thumb="@color/red1"-->
+        <!--                    android:progress="45"-->
+        <!--                    android:layout_weight="1"-->
+        <!--                    android:splitTrack="false"-->
+        <!--                    />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_condensed_bold"
+        android:gravity="center_vertical"
+        android:text="EQUALIZER"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/switch_equalizer"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/switch_thumb"
+        android:text="ON  "
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinner_preset"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/spinner_back"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller_loud"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="18dp"
+        app:back_circle_color="#B5B5B5"
+        app:indicator_color="@color/secondaryColor"
+        app:indicator_width="10"
+        app:is_continuous="false"
+        app:label="LOUDNESS"
+        app:label_color="#000000"
+        app:label_size="20"
+        app:layout_constraintBottom_toTopOf="@+id/croller_vr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/croller_bass"
+        app:main_circle_color="#E1E0E0"
+        app:max="40"
+        app:progress_primary_color="@color/secondaryColor"
+        app:progress_secondary_color="#B5B5B5" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller_vr"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="45dp"
+        app:back_circle_color="#B5B5B5"
+        app:indicator_color="@color/secondaryColor"
+        app:indicator_width="10"
+        app:is_continuous="false"
+        app:label="VIRTUAL"
+        app:label_color="#000000"
+        app:label_size="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:main_circle_color="#E1E0E0"
+        app:max="40"
+        app:progress_primary_color="@color/secondaryColor"
+        app:progress_secondary_color="#B5B5B5" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+
+        android:id="@+id/croller_bass"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:back_circle_color="#B5B5B5"
+        app:indicator_color="@color/secondaryColor"
+        app:indicator_width="10"
+
+
+        app:is_continuous="false"
+        app:label="BASS"
+        app:label_color="#000000"
+        app:label_size="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_preset"
+        app:main_circle_color="#E1E0E0"
+        app:max="40"
+        app:progress_primary_color="@color/secondaryColor"
+        app:progress_secondary_color="#B5B5B5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

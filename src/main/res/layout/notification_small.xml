@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+
+
+    <ImageView
+        android:id="@+id/notify_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/album_art1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        />
+
+    <TextView
+        android:id="@+id/notify_song"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/notify_play"
+        android:layout_toRightOf="@id/notify_img"
+        android:fontFamily="@font/amaranth"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="Started from the bottom"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notify_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notify_song"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@id/notify_play"
+        android:layout_toRightOf="@id/notify_img"
+        android:fontFamily="@font/pt_sans_bold"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="Drake"
+        android:textColor="#B1B0B0"
+        android:textSize="@dimen/_7ssp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:id="@+id/notify_play"
+        android:src="@drawable/play"
+        android:drawablePadding="6dp"
+        android:paddingLeft="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+</RelativeLayout>

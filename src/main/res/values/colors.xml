@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4E4E4E</color>
+    <color name="colorPrimaryDark">#2f333f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#030303</color>
+    <color name="blackfade">#4E4E4E</color>
+    <color name="blackfaded">#7b7b7b</color>
+    <color name="bluedark">#2f333f</color>
+    <color name="bluelight">#49acd5</color>
+    <color name="green">#45bc62</color>
+    <color name="orange">#eaad43</color>
+    <color name="orange1">#FD8F78</color>
+    <color name="orange2">#FD8F78</color>
+    <color name="white">#fffefe</color>
+    <color name="back">#FFE5DEDE</color>
+    <color name="tab_b">#00E676</color>
+    <color name="bluest">#da2985f6</color>
+    <color name="bluest1">#2985F6</color>
+    <color name="newC">#E040FB</color>
+    <color name="newC1">#ff3eff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="red1">#FF1747</color>
+    <color name="colorTransBg">#DA000000</color>
+    <color name="reach_blavk">#050505</color>
+    <color name="light_sea_green">#1B9AAA</color>
+    <color name="max_yellow">#F6F930</color>
+    <color name="grey">#5D737E</color>
+    <color name="spanish_red">#DD0426</color>
+    <color name="tractor_red">#F71735</color>
+    <color name="arctic_lime">#E4FF1A</color>
+    <color name="o_yellow">#ffa000</color>
+
+    <color name="cp">#f4f4f4</color>
+    <color name="cpd">#ff7315</color>
+    <color name="cp1">#3a3535</color>
+    <color name="cpd1">#232020</color>
+
+    <color name="cp2">#443737</color>
+    <color name="cpd2">#272121</color>
+    <color name="cp3">#F8333C</color>
+    <color name="cpd3">#ff4d00</color>
+
+    <color name="secondaryColor">#4caf50</color>
+    <color name="primaryColor">#212121</color>
+    <color name="primaryLightColor">#313131</color>
+    <color name="primaryDarkColor">#101010</color>
+    <color name="playingCardColor">#444caf50</color>
+    <color name="textColor">#FAFAFA</color>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear_eq"
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/croller_bass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_preset">
+
+<!--                <SeekBar-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:progressDrawable="@drawable/seekbar_style"-->
+<!--                    android:thumb="@color/red1"-->
+<!--                    android:progress="45"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:splitTrack="false"-->
+<!--                    />-->
+
+<!--                <SeekBar-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:progressDrawable="@drawable/seekbar_style"-->
+<!--                    android:thumb="@color/red1"-->
+<!--                    android:progress="45"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:splitTrack="false"-->
+<!--                    />-->
+
+<!--                <SeekBar-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:progressDrawable="@drawable/seekbar_style"-->
+<!--                    android:thumb="@color/red1"-->
+<!--                    android:progress="45"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:splitTrack="false"-->
+<!--                    />-->
+
+<!--                <SeekBar-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:progressDrawable="@drawable/seekbar_style"-->
+<!--                    android:thumb="@color/red1"-->
+<!--                    android:progress="45"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:splitTrack="false"-->
+<!--                    />-->
+
+<!--                <SeekBar-->
+<!--                    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:progressDrawable="@drawable/seekbar_style"-->
+<!--                    android:thumb="@color/red1"-->
+<!--                    android:progress="45"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:splitTrack="false"-->
+<!--                    />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="EQUALIZER"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch_equalizer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="15dp"
+        android:text="ON  "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_preset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="32dp"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_equalizer" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller_loud"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:back_circle_color="#EDEDED"
+        app:indicator_color="@color/red1"
+        app:indicator_width="10"
+        app:is_continuous="false"
+        app:label="LOUDNESS"
+        app:label_color="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:main_circle_color="#FFFFFF"
+        app:max="40"
+        app:progress_primary_color="@color/red1"
+        app:progress_secondary_color="#EEEEEE" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/croller_vr"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:back_circle_color="#EDEDED"
+        app:indicator_color="@color/red1"
+        app:indicator_width="10"
+        app:is_continuous="false"
+        app:label="VIRTUAL"
+        app:label_color="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:main_circle_color="#FFFFFF"
+        app:max="40"
+        app:progress_primary_color="@color/red1"
+        app:progress_secondary_color="#EEEEEE" />
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+
+        android:id="@+id/croller_bass"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:back_circle_color="#EDEDED"
+        app:indicator_color="@color/red1"
+        app:indicator_width="10"
+        app:is_continuous="false"
+        app:label="BASS"
+
+        app:label_color="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/croller_vr"
+        app:layout_constraintEnd_toStartOf="@+id/croller_vr"
+        app:layout_constraintStart_toEndOf="@+id/croller_loud"
+        app:main_circle_color="#FFFFFF"
+        app:max="40"
+        app:progress_primary_color="@color/red1"
+        app:progress_secondary_color="#EDEDED" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
